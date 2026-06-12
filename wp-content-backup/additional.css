@@ -1,0 +1,12 @@
+/*
+Site Editor -> 
+*/
+
+.color-swatch-global {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #ccc;
+	margin-right: 6px;
+	vertical-align: middle;
+}
