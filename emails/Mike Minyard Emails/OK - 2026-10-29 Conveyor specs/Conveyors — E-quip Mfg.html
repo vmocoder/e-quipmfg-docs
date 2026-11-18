@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Conveyors — E-quip Mfg</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F4F2; --panel:#FFFFFF; --ink:#1E2A2E; --sub:#5B6B70;
+  --line:#D8DDDB; --steel:#2C5D66; --steel-dk:#1D454C; --amber:#B4761F;
+  font-size:16px;
+}
+:root:not([data-theme="light"]) { }
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14181A; --panel:#1B2124; --ink:#EDEFEE; --sub:#9BA6A9;
+    --line:#33393B; --steel:#5FA3AC; --steel-dk:#7FBAC2; --amber:#D69A4B;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#14181A; --panel:#1B2124; --ink:#EDEFEE; --sub:#9BA6A9;
+  --line:#33393B; --steel:#5FA3AC; --steel-dk:#7FBAC2; --amber:#D69A4B;
+}
+*{box-sizing:border-box;}
+html{scroll-padding-top:env(safe-area-inset-top,0px);}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:'Inter',-apple-system,'Segoe UI',sans-serif;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  line-height:1.5;
+}
+h1,h2,h3{font-family:'Archivo',sans-serif; margin:0; letter-spacing:-0.01em;}
+.wrap{max-width:920px; margin:0 auto; padding:0 28px;}
+
+/* Hero */
+.hero{padding:72px 0 48px; border-bottom:1px solid var(--line);}
+.hero h1{font-size:clamp(2.4rem,6vw,3.6rem); font-weight:700; color:var(--steel-dk);}
+.hero p{max-width:46ch; font-size:1.15rem; color:var(--sub); margin-top:14px;}
+.hero .tag{font-size:.95rem; color:var(--sub); margin-top:24px; display:flex; gap:18px; flex-wrap:wrap;}
+.hero .tag span{border-left:2px solid var(--amber); padding-left:10px;}
+
+/* Config diagrams */
+.configs{padding:56px 0; border-bottom:1px solid var(--line);}
+.configs h2{font-size:1.6rem; margin-bottom:6px;}
+.configs>.wrap>p{color:var(--sub); max-width:56ch; margin:0 0 32px;}
+.cfg-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:28px;}
+.cfg{text-align:left;}
+.cfg svg{width:100%; height:56px; display:block;}
+.cfg h3{font-size:.98rem; font-weight:600; margin-top:12px;}
+.cfg p{font-size:.85rem; color:var(--sub); margin:4px 0 0;}
+
+/* Feature sections */
+.features{padding:56px 0; border-bottom:1px solid var(--line);}
+.feat-grid{display:grid; grid-template-columns:1fr 1fr; gap:44px 48px;}
+.feat h2{font-size:1.15rem; font-weight:600; padding-bottom:10px; border-bottom:1px solid var(--line); margin-bottom:14px;}
+.feat ul{margin:0; padding:0; list-style:none;}
+.feat li{position:relative; padding-left:18px; margin-bottom:9px; color:var(--ink); font-size:.97rem;}
+.feat li::before{content:""; position:absolute; left:0; top:.55em; width:6px; height:6px; background:var(--steel); border-radius:1px;}
+
+/* Footer */
+footer{padding:40px 0 56px; color:var(--sub); font-size:.9rem;}
+footer strong{color:var(--ink); font-family:'Archivo',sans-serif; font-weight:600; font-size:1.05rem;}
+
+@media (max-width:640px){
+  .feat-grid{grid-template-columns:1fr;}
+  .hero{padding:52px 0 36px;}
+}
+@media print{
+  body{background:#fff;}
+  .hero{padding-top:0;}
+}
+</style>
+</head>
+<body>
+
+<div class="wrap hero">
+  <h1>Conveyors</h1>
+  <p>Custom stainless conveying systems, built for washdown and engineered around your line — not a catalog part number.</p>
+  <div class="tag">
+    <span>304 stainless construction</span>
+    <span>USDA accepted</span>
+    <span>Built to AMI Hygienic standards</span>
+  </div>
+</div>
+
+<div class="configs">
+  <div class="wrap">
+    <h2>Configurations</h2>
+    <p>Every conveyor shares the same sanitary construction, laid out however your process requires.</p>
+    <div class="cfg-grid">
+      <div class="cfg">
+        <svg viewBox="0 0 140 56"><line x1="15" y1="28" x2="125" y2="28" stroke="#2C5D66" stroke-width="4" stroke-linecap="round"/></svg>
+        <h3>Straight</h3>
+      </div>
+      <div class="cfg">
+        <svg viewBox="0 0 140 56"><path d="M15 45 L15 20 L125 20" fill="none" stroke="#2C5D66" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Turn</h3>
+      </div>
+      <div class="cfg">
+        <svg viewBox="0 0 140 56"><line x1="15" y1="45" x2="125" y2="12" stroke="#2C5D66" stroke-width="4" stroke-linecap="round"/></svg>
+        <h3>Incline / Decline</h3>
+      </div>
+      <div class="cfg">
+        <svg viewBox="0 0 140 56"><path d="M15 40 L55 40 L85 16 L125 16" fill="none" stroke="#2C5D66" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Offset</h3>
+      </div>
+      <div class="cfg">
+        <svg viewBox="0 0 140 56"><path d="M10 14 L70 40" fill="none" stroke="#2C5D66" stroke-width="4" stroke-linecap="round"/><path d="M10 46 L70 40" fill="none" stroke="#2C5D66" stroke-width="4" stroke-linecap="round"/><line x1="70" y1="40" x2="130" y2="40" stroke="#2C5D66" stroke-width="4" stroke-linecap="round"/></svg>
+        <h3>Systems</h3>
+        <p>Metering &amp; merging</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="features">
+  <div class="wrap feat-grid">
+
+    <div class="feat">
+      <h2>Sanitary Features</h2>
+      <ul>
+        <li>304 stainless construction</li>
+        <li>Stainless motor/gearbox standard</li>
+        <li>Continuous welded</li>
+        <li>Designed for ease of washdown</li>
+        <li>Built to AMI Hygienic standards</li>
+      </ul>
+    </div>
+
+    <div class="feat">
+      <h2>Product Features</h2>
+      <ul>
+        <li>Heavy duty construction</li>
+        <li>Available in any length and width</li>
+        <li>Belt options: plastic modular, stainless, wire, or urethane</li>
+        <li>#4 finish or bead blast</li>
+        <li>Custom designed for your specific need</li>
+        <li>USDA accepted</li>
+      </ul>
+    </div>
+
+    <div class="feat">
+      <h2>Product Options</h2>
+      <ul>
+        <li>Hinge-down sides</li>
+        <li>Hoppers</li>
+        <li>Chutes</li>
+        <li>Load cells</li>
+        <li>Catch pans</li>
+        <li>Metal detectors</li>
+        <li>Casters</li>
+        <li>Spray bars</li>
+      </ul>
+    </div>
+
+    <div class="feat">
+      <h2>Electrical Controls</h2>
+      <ul>
+        <li>NEMA 4X slope-top panels</li>
+        <li>UL listed panels</li>
+        <li>Disconnect</li>
+        <li>Push button controls</li>
+        <li>Optional touch screen</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<footer class="wrap">
+  <strong>E-quip Mfg</strong> — Frankfort, IL
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+From: Mike Minyard <mike@e-quipmfg.com>
+To: Rex Espinosa <rexe928@gmail.com>
+Date: Thu, Oct 29, 2026 9:20 PM CDT
+Subject: Conveyor specs
+Attachments:
+  - Conveyors — E-quip Mfg.html
+  - Incline Conveyor.png
+  - Merger (2).png
+  - S (2).png
+  - Straight (2).png
+  - Turn (2).png
+  - Z Conveyor.png
+
+Here are the details for the conveyor page.
+
+The S file is actually for the offset conveyor.
+
+Add Z-Conveyor to the line up.

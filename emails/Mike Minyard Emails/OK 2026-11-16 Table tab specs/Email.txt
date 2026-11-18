@@ -1,0 +1,15 @@
+From: Mike Minyard <mike@e-quipmfg.com>
+To: Rex Espinosa <rexe928@gmail.com>
+Date: Mon, Nov 16, 2026 9:22 AM CST
+Subject: Table tab specs
+Attachments:
+  - Custom Stainless Steel Tables.docx
+  - dump table.png
+  - Table 3_9782843753267609001.png
+
+Hey Rex,
+
+Here is some verbiage(done by AI) for the Tables tab on the products page. I figured we did really need much there because tables are pretty self explanatory. I thought the short description and two different renderings would suffice. If you think we should do something different or add something else please let me know.
+
+Thanks
+Mike
